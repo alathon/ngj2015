@@ -48,13 +48,13 @@ public class KeyboardController : MonoBehaviour {
 
         _limbController.AddForce(isLeft ? LimbController.Limb.LeftHand : LimbController.Limb.RightHand,
                                 new Vector3(armMovement.x * armLeftRightFactor,
-                                            armMovement != Vector2.zero ? armUpForce : 0,
+                                            armMovement.y > 0 ? armUpForce : 0,
                                             armMovement.y * armForwardBackwardFactor));
 
         // leg 2 axes
         _limbController.AddForce(isLeft ? LimbController.Limb.LeftFoot : LimbController.Limb.RightFoot,
                                 new Vector3(legMovement.x * legLeftRightFactor,
-                                            legMovement != Vector2.zero ? legUpForce : 0,
+                                            legMovement.y > 0 ? legUpForce : 0,
                                             legMovement.y * legForwardBackwardFactor));
 
         // release button

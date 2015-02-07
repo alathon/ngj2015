@@ -34,20 +34,20 @@ public class GamepadController : MonoBehaviour
 	    Vector2 armMovement = GamePad.GetAxis(_arm, _index);
         _limbController.AddForce(isLeft ? LimbController.Limb.LeftHand : LimbController.Limb.RightHand,
             isLeft ? new Vector3(-armMovement.y * armLeftRightFactor,
-                                armMovement != Vector2.zero ? armUpForce : 0,
+                                armMovement.y > 0 ? armUpForce : 0,
                                 -armMovement.x * armForwardBackwardFactor)
                     : new Vector3(armMovement.y * armLeftRightFactor,
-                                armMovement != Vector2.zero ? armUpForce : 0,
+                                armMovement.y > 0 ? armUpForce : 0,
                                 armMovement.x * armForwardBackwardFactor));
 
 	    // leg 2 axes
 	    Vector2 legMovement = GamePad.GetAxis(_leg, _index);
         _limbController.AddForce(isLeft ? LimbController.Limb.LeftFoot : LimbController.Limb.RightFoot,
             isLeft ? new Vector3(-legMovement.y * legLeftRightFactor,
-                                legMovement != Vector2.zero ? legUpForce : 0,
+                                legMovement.y > 0 ? legUpForce : 0,
                                 -legMovement.x * legForwardBackwardFactor)
                     : new Vector3(legMovement.y * legLeftRightFactor,
-                                legMovement != Vector2.zero ? legUpForce : 0,
+                                legMovement.y > 0 ? legUpForce : 0,
                                 legMovement.x * legForwardBackwardFactor));
 
 	    // release button
