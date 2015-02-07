@@ -61,6 +61,11 @@ public class LimbController : MonoBehaviour
         Verify();
     }
 
+    void Update()
+    {
+        
+    }
+
     void Reset()
     {
         Verify();
