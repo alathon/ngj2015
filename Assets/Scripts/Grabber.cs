@@ -8,7 +8,7 @@ public class Grabber : MonoBehaviour {
 	public Collectible collectible;
 
 	public void OnCollisionEnter(Collision col) {
-		Collectible coll = col.gameObject.GetComponent<Collectible> ();
+		var coll = col.gameObject.GetComponent<Collectible> ();
 		if (coll) {
 			this.Collect(coll);
 		}
@@ -20,21 +20,10 @@ public class Grabber : MonoBehaviour {
 	}
 
 	public void Drop() {
-		if (this.collectible != null) {
-			this.collectible.Unstick ();
-			this.rigidbody.AddExplosionForce (10, this.transform.position, 1f);
-			this.collectible = null;
-		}
-		
-	}
+	    if (this.collectible == null) return;
 
-	void Update() {
-		if(Input.GetKeyDown(KeyCode.A)) {
-			this.Collect(test.GetComponent<Collectible>());
-		}
-
-		if (Input.GetKeyDown (KeyCode.S)) {
-			this.Drop ();
-		}
+	    this.collectible.Unstick ();
+	    this.rigidbody.AddExplosionForce (10, this.transform.position, 1f);
+	    this.collectible = null;
 	}
 }
