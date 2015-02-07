@@ -69,7 +69,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 405776}
   - 54: {fileID: 5405768}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Head
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -106,7 +106,7 @@ GameObject:
   - 23: {fileID: 2340656}
   - 54: {fileID: 5440656}
   - 144: {fileID: 14440656}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: RightLeg1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -126,7 +126,7 @@ GameObject:
   - 23: {fileID: 2340658}
   - 54: {fileID: 5440658}
   - 144: {fileID: 14440658}
-  m_Layer: 0
+  m_Layer: 15
   m_Name: RightFoot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -146,7 +146,7 @@ GameObject:
   - 23: {fileID: 2340660}
   - 54: {fileID: 5440660}
   - 144: {fileID: 14440660}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: RightLeg2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -166,7 +166,7 @@ GameObject:
   - 23: {fileID: 2340662}
   - 54: {fileID: 5440662}
   - 144: {fileID: 14440662}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: LeftLeg2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -186,7 +186,7 @@ GameObject:
   - 23: {fileID: 2340664}
   - 54: {fileID: 5440664}
   - 144: {fileID: 14440664}
-  m_Layer: 0
+  m_Layer: 15
   m_Name: LeftFoot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -206,7 +206,7 @@ GameObject:
   - 23: {fileID: 2340666}
   - 54: {fileID: 5440666}
   - 144: {fileID: 14440666}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: LeftLeg1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -257,7 +257,7 @@ GameObject:
   - 23: {fileID: 2340668}
   - 54: {fileID: 5440668}
   - 144: {fileID: 14440668}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: RightArm1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -277,7 +277,7 @@ GameObject:
   - 23: {fileID: 2340670}
   - 54: {fileID: 5440670}
   - 144: {fileID: 14440670}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: LeftArm1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -297,7 +297,7 @@ GameObject:
   - 23: {fileID: 2340672}
   - 54: {fileID: 5440672}
   - 144: {fileID: 14440672}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: RightArm2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -317,7 +317,7 @@ GameObject:
   - 23: {fileID: 2340674}
   - 54: {fileID: 5440674}
   - 144: {fileID: 14440674}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: RightHand
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -337,7 +337,7 @@ GameObject:
   - 23: {fileID: 2340676}
   - 54: {fileID: 5440676}
   - 144: {fileID: 14440676}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: LeftHand
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -373,7 +373,7 @@ GameObject:
   - 23: {fileID: 2340678}
   - 54: {fileID: 5440678}
   - 144: {fileID: 14405768}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Torso
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -410,7 +410,7 @@ GameObject:
   - 23: {fileID: 2340680}
   - 54: {fileID: 5440680}
   - 144: {fileID: 14440678}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: LeftArm2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
