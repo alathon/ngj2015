@@ -15,38 +15,45 @@ public class GamepadController : MonoBehaviour
     public float legLeftRightFactor;
     public float legForwardBackwardFactor;
 
-    private GamePad.Index _index; // controller index
+    private GamePad.Index _index = GamePad.Index.Any; // controller index
     private GamePad.Axis _arm;
     private GamePad.Axis _leg;
-
     private LimbController _limbController;
 
     private void Start()
     {
-        _index = isLeft ? GamePad.Index.One : GamePad.Index.Two;
         _arm = isLeft ? GamePad.Axis.LeftStick : GamePad.Axis.RightStick;
         _leg = isLeft ? GamePad.Axis.RightStick : GamePad.Axis.LeftStick;
         _limbController = FindObjectOfType<LimbController>();
     }
 
-	void FixedUpdate () {
+    public void SetIndex(GamePad.Index idx)
+    {
+        _index = idx;
+        Debug.Log("Index of GamePadController(" + isLeft + ") set to " + idx);
+    }
+
+	void FixedUpdate ()
+	{
+	    if (_index == GamePad.Index.Any) return;
+
 	    // arm 2 axes
 	    Vector2 armMovement = GamePad.GetAxis(_arm, _index);
         _limbController.AddForce(isLeft ? LimbController.Limb.LeftHand : LimbController.Limb.RightHand,
-            isLeft ? new Vector3(-armMovement.y * armLeftRightFactor,
+            isLeft ? new Vector3(armMovement.y * armLeftRightFactor,
                                 armMovement.y > 0 ? armUpForce : 0,
                                 -armMovement.x * armForwardBackwardFactor)
-                    : new Vector3(armMovement.y * armLeftRightFactor,
+                    : new Vector3(-armMovement.y * armLeftRightFactor,
                                 armMovement.y > 0 ? armUpForce : 0,
                                 armMovement.x * armForwardBackwardFactor));
 
 	    // leg 2 axes
 	    Vector2 legMovement = GamePad.GetAxis(_leg, _index);
         _limbController.AddForce(isLeft ? LimbController.Limb.LeftFoot : LimbController.Limb.RightFoot,
-            isLeft ? new Vector3(-legMovement.y * legLeftRightFactor,
+            isLeft ? new Vector3(legMovement.y * legLeftRightFactor,
                                 legMovement.y > 0 ? legUpForce : 0,
                                 -legMovement.x * legForwardBackwardFactor)
-                    : new Vector3(legMovement.y * legLeftRightFactor,
+                    : new Vector3(-legMovement.y * legLeftRightFactor,
                                 legMovement.y > 0 ? legUpForce : 0,
                                 legMovement.x * legForwardBackwardFactor));
 
