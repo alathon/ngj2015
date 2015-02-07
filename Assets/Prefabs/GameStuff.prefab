@@ -25,6 +25,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 465166}
+  - 114: {fileID: 11410220}
   m_Layer: 0
   m_Name: RightController
   m_TagString: Untagged
@@ -40,6 +41,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 465168}
+  - 114: {fileID: 11410222}
   m_Layer: 0
   m_Name: LeftController
   m_TagString: Untagged
@@ -85,6 +87,44 @@ Transform:
   m_Children: []
   m_Father: {fileID: 465164}
   m_RootOrder: 1
+--- !u!114 &11410220
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 165166}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f316b7174f887064792a8b7975e2f3e0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isLeft: 0
+  armUpForce: 10
+  armLeftRightFactor: 10
+  armForwardBackwardFactor: 10
+  legUpForce: 10
+  legLeftRightFactor: 10
+  legForwardBackwardFactor: 10
+  limbController: {fileID: 11465168}
+--- !u!114 &11410222
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 165168}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f316b7174f887064792a8b7975e2f3e0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isLeft: 1
+  armUpForce: 10
+  armLeftRightFactor: 10
+  armForwardBackwardFactor: 10
+  legUpForce: 10
+  legLeftRightFactor: 10
+  legForwardBackwardFactor: 10
+  limbController: {fileID: 11465168}
 --- !u!114 &11465166
 MonoBehaviour:
   m_ObjectHideFlags: 1
