@@ -23,7 +23,5 @@ public class Collectible : MonoBehaviour {
 		if (this.pastParent != null) {
 			this.transform.SetParent(this.pastParent);
 		}
-
-		this.rigidbody.AddExplosionForce (10, this.transform.position, 1f);
 	}
 }

@@ -45,7 +45,7 @@ public class LimbController : MonoBehaviour
 
     public void Release(Limb hand)
     {
-        
+        this.limbToGameObj[hand].GetComponent<Grabber>().Drop();
     }
 
     void Awake()
