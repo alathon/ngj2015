@@ -1,15 +1,23 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class LimbController : MonoBehaviour {
+public class LimbController : MonoBehaviour
+{
+    public enum Limb
+    {
+        LeftHand,
+        RightHand,
+        LeftFoot,
+        RightFoot
+    }
 
-	// Use this for initialization
-	void Start () {
-	
-	}
-	
-	// Update is called once per frame
-	void Update () {
-	
-	}
+    [SerializeField] private GameObject leftHand;
+    [SerializeField] private GameObject rightHand;
+    [SerializeField] private GameObject leftFoot;
+    [SerializeField] private GameObject rightFoot;
+
+    public void AddForce(Limb limb, Vector3 force)
+    {
+
+    }
 }
