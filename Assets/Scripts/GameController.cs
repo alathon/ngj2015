@@ -9,7 +9,7 @@ public class GameController : MonoBehaviour
 
 	void Start ()
 	{
-	    OVRManager.TrackingAcquired += OnOculusStart;
+        OVRManager.TrackingAcquired += OnOculusStart;
         OVRManager.TrackingLost += OnOculusEnd;
 	    if (OVRManager.capiHmd != null)
 	    {
