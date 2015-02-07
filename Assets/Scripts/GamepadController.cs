@@ -19,19 +19,20 @@ public class GamepadController : MonoBehaviour
     private GamePad.Axis _arm;
     private GamePad.Axis _leg;
 
-    public LimbController limbController;
+    private LimbController _limbController;
 
     private void Start()
     {
         _index = isLeft ? GamePad.Index.One : GamePad.Index.Two;
         _arm = isLeft ? GamePad.Axis.LeftStick : GamePad.Axis.RightStick;
         _leg = isLeft ? GamePad.Axis.RightStick : GamePad.Axis.LeftStick;
+        _limbController = FindObjectOfType<LimbController>();
     }
 
 	void FixedUpdate () {
 	    // arm 2 axes
 	    Vector2 armMovement = GamePad.GetAxis(_arm, _index);
-        limbController.AddForce(isLeft ? LimbController.Limb.LeftHand : LimbController.Limb.RightHand,
+        _limbController.AddForce(isLeft ? LimbController.Limb.LeftHand : LimbController.Limb.RightHand,
             isLeft ? new Vector3(-armMovement.y * armLeftRightFactor,
                                 armUpForce,
                                 -armMovement.x * armForwardBackwardFactor)
@@ -41,7 +42,7 @@ public class GamepadController : MonoBehaviour
 
 	    // leg 2 axes
 	    Vector2 legMovement = GamePad.GetAxis(_leg, _index);
-        limbController.AddForce(isLeft ? LimbController.Limb.LeftFoot : LimbController.Limb.RightFoot,
+        _limbController.AddForce(isLeft ? LimbController.Limb.LeftFoot : LimbController.Limb.RightFoot,
             isLeft ? new Vector3(-legMovement.y * legLeftRightFactor,
                                 legUpForce,
                                 -legMovement.x * legForwardBackwardFactor)
@@ -53,7 +54,7 @@ public class GamepadController : MonoBehaviour
 	    foreach (GamePad.Button b in Enum.GetValues(typeof(GamePad.Button)))
 	    {
 	        if (GamePad.GetButtonDown(b, _index))
-	            limbController.Release(isLeft ? LimbController.Limb.LeftHand : LimbController.Limb.RightHand);
+	            _limbController.Release(isLeft ? LimbController.Limb.LeftHand : LimbController.Limb.RightHand);
 	    }
 	}
 }

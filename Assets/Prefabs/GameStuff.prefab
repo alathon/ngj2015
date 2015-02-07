@@ -9,7 +9,6 @@ GameObject:
   m_Component:
   - 4: {fileID: 465164}
   - 114: {fileID: 11465166}
-  - 114: {fileID: 11465168}
   m_Layer: 0
   m_Name: GameStuff
   m_TagString: Untagged
@@ -105,7 +104,6 @@ MonoBehaviour:
   legUpForce: 10
   legLeftRightFactor: 10
   legForwardBackwardFactor: 10
-  limbController: {fileID: 11465168}
 --- !u!114 &11410222
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -124,7 +122,6 @@ MonoBehaviour:
   legUpForce: 10
   legLeftRightFactor: 10
   legForwardBackwardFactor: 10
-  limbController: {fileID: 11465168}
 --- !u!114 &11465166
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -138,21 +135,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   normalCam: {fileID: 0}
   oculusBase: {fileID: 0}
---- !u!114 &11465168
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 165164}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 02c3cee7167a02543a69744c75f32fe5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  leftHand: {fileID: 0}
-  rightHand: {fileID: 0}
-  leftFoot: {fileID: 0}
-  rightFoot: {fileID: 0}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
