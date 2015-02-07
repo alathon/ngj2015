@@ -53,7 +53,7 @@ public class GamepadController : MonoBehaviour
 	    foreach (GamePad.Button b in Enum.GetValues(typeof(GamePad.Button)))
 	    {
 	        if (GamePad.GetButtonDown(b, _index))
-	            ; // TODO
+	            limbController.Release(isLeft ? LimbController.Limb.LeftHand : LimbController.Limb.RightHand);
 	    }
 	}
 }
