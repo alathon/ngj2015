@@ -100,12 +100,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isLeft: 0
-  armUpForce: 10
-  armLeftRightFactor: 10
-  armForwardBackwardFactor: 10
-  legUpForce: 10
-  legLeftRightFactor: 10
-  legForwardBackwardFactor: 10
+  armUpForce: 50
+  armLeftRightFactor: 20
+  armForwardBackwardFactor: 20
+  legUpForce: 50
+  legLeftRightFactor: 20
+  legForwardBackwardFactor: 20
 --- !u!114 &11410222
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -118,12 +118,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isLeft: 1
-  armUpForce: 10
-  armLeftRightFactor: 10
-  armForwardBackwardFactor: 10
-  legUpForce: 10
-  legLeftRightFactor: 10
-  legForwardBackwardFactor: 10
+  armUpForce: 50
+  armLeftRightFactor: 20
+  armForwardBackwardFactor: 20
+  legUpForce: 50
+  legLeftRightFactor: 20
+  legForwardBackwardFactor: 20
 --- !u!114 &11431620
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -136,12 +136,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isLeft: 0
-  armUpForce: 100
-  armLeftRightFactor: 100
-  armForwardBackwardFactor: 100
-  legUpForce: 100
-  legLeftRightFactor: 100
-  legForwardBackwardFactor: 100
+  armUpForce: 50
+  armLeftRightFactor: 20
+  armForwardBackwardFactor: 20
+  legUpForce: 50
+  legLeftRightFactor: 20
+  legForwardBackwardFactor: 20
 --- !u!114 &11431622
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -154,12 +154,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isLeft: 1
-  armUpForce: 100
-  armLeftRightFactor: 100
-  armForwardBackwardFactor: 100
-  legUpForce: 100
-  legLeftRightFactor: 100
-  legForwardBackwardFactor: 100
+  armUpForce: 50
+  armLeftRightFactor: 20
+  armForwardBackwardFactor: 20
+  legUpForce: 50
+  legLeftRightFactor: 20
+  legForwardBackwardFactor: 20
 --- !u!114 &11465166
 MonoBehaviour:
   m_ObjectHideFlags: 1

@@ -30,17 +30,17 @@ public class KeyboardController : MonoBehaviour {
 	private void Update () {
         // arm 2 axes
 	    Vector2 armMovement = Vector2.zero;
-	    if (Input.GetKeyDown(isLeft ? KeyCode.A : KeyCode.J)) // left
+	    if (Input.GetKey(isLeft ? KeyCode.A : KeyCode.J)) // left
 	        armMovement.x = -1;
-        if (Input.GetKeyDown(isLeft ? KeyCode.D : KeyCode.L)) // right
+        if (Input.GetKey(isLeft ? KeyCode.D : KeyCode.L)) // right
             armMovement.x = 1;
-        if (Input.GetKeyDown(isLeft ? KeyCode.W : KeyCode.I)) // forward
-            armMovement.y = -1;
-        if (Input.GetKeyDown(isLeft ? KeyCode.S : KeyCode.K)) // backward
+        if (Input.GetKey(isLeft ? KeyCode.W : KeyCode.I)) // forward
             armMovement.y = 1;
+        if (Input.GetKey(isLeft ? KeyCode.S : KeyCode.K)) // backward
+            armMovement.y = -1;
 
 	    Vector2 legMovement = Vector2.zero;
-	    if (Input.GetKeyDown(isLeft ? KeyCode.LeftShift : KeyCode.RightShift))
+	    if (Input.GetKey(isLeft ? KeyCode.LeftShift : KeyCode.RightShift))
 	    {
 	        legMovement = armMovement;
 	        armMovement = Vector2.zero;
