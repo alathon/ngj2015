@@ -40,7 +40,7 @@ public class KeyboardController : MonoBehaviour {
             armMovement.y = 1;
 
 	    Vector2 legMovement = Vector2.zero;
-	    if (Input.GetKeyDown(KeyCode.LeftShift) || Input.GetKeyDown(KeyCode.RightShift))
+	    if (Input.GetKeyDown(isLeft ? KeyCode.LeftShift : KeyCode.RightShift))
 	    {
 	        legMovement = armMovement;
 	        armMovement = Vector2.zero;
