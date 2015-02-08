@@ -14,7 +14,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &165164
 GameObject:
@@ -30,7 +30,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &165166
 GameObject:
@@ -47,7 +47,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &165168
 GameObject:
@@ -64,7 +64,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &420624
 Transform:
@@ -85,7 +85,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 165164}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.80769348, y: -.037430048, z: -.239456296}
+  m_LocalPosition: {x: 25.7110233, y: .099999994, z: .774426937}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 465166}
@@ -179,11 +179,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isLeft: 0
   armUpForce: 60
-  armLeftRightFactor: 20
-  armForwardBackwardFactor: 20
+  armLeftRightFactor: 30
+  armForwardBackwardFactor: 30
   legUpForce: 60
-  legLeftRightFactor: 20
-  legForwardBackwardFactor: 20
+  legLeftRightFactor: 30
+  legForwardBackwardFactor: 30
 --- !u!114 &11431622
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -198,10 +198,10 @@ MonoBehaviour:
   isLeft: 1
   armUpForce: 60
   armLeftRightFactor: 20
-  armForwardBackwardFactor: 20
+  armForwardBackwardFactor: 30
   legUpForce: 60
   legLeftRightFactor: 20
-  legForwardBackwardFactor: 20
+  legForwardBackwardFactor: 30
 --- !u!114 &11465166
 MonoBehaviour:
   m_ObjectHideFlags: 1
