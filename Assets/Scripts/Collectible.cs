@@ -21,12 +21,20 @@ public class Collectible : MonoBehaviour {
 		this.pastParent = this.transform.parent;
 		this.transform.SetParent (gObj.transform);
 
+        SofaArea sofa = FindObjectOfType<SofaArea>();
+
         // HARDCODED MUAHAHAHA
 	    if (CompareTag("TVRemote"))
 	    {
 	        GameObject.FindObjectOfType<TVController>().OnWeird();
-            FindObjectOfType<SofaArea>().babyScream.Stop();
+            
+            sofa.babyScream.Stop();
+	        sofa.remoteText.enabled = false;
+	        sofa.sofaText.enabled = false;
+	        sofa.tvText.enabled = true;
 	    }
+	    if (CompareTag("Glass"))
+	        sofa.glassText.enabled = false;
 	}
 
 	public void Unstick() {
