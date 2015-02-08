@@ -20,6 +20,10 @@ public class Collectible : MonoBehaviour {
 		this.stuck = gObj;
 		this.pastParent = this.transform.parent;
 		this.transform.SetParent (gObj.transform);
+
+        // HARDCODED MUAHAHAHA
+        if(CompareTag("TVRemote"))
+            GameObject.FindObjectOfType<TVController>().OnWeird();
 	}
 
 	public void Unstick() {
