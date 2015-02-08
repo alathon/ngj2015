@@ -17,9 +17,9 @@ public class SofaArea : MonoBehaviour
             tv.OnCreepy();
     }
 
-    private void OnTriggerExit(Collider other)
+    /*private void OnTriggerExit(Collider other)
     {
         if (other.transform.root.CompareTag("Player"))
             tv.OnNormal();
-    }
+    }*/
 }

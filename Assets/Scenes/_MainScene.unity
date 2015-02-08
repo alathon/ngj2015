@@ -8978,8 +8978,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   waltzClip: {fileID: 8300000, guid: 877207700720536419215b0fa0ded78b, type: 3}
-  creepyClip: {fileID: 0}
-  weirdClip: {fileID: 0}
+  creepyClip: {fileID: 8300000, guid: 243739abdd112664181c900e4351038a, type: 3}
+  weirdClip: {fileID: 8300000, guid: 508ac6989bc8db749b3aa38a0b987280, type: 3}
   normalChickenTexture: {fileID: 2800000, guid: 6f83fdaa1744ff74a9347cf10e8d9011,
     type: 3}
   creepyChickenTexture: {fileID: 2800000, guid: 568ee8cfe39813f4db144b8a8feacf7f,
