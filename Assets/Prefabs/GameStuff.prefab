@@ -131,10 +131,10 @@ MonoBehaviour:
   isLeft: 0
   armUpForce: 100
   armLeftRightFactor: 100
-  armForwardBackwardFactor: 100
-  legUpForce: 100
-  legLeftRightFactor: 100
-  legForwardBackwardFactor: 100
+  armForwardBackwardFactor: 200
+  legUpForce: 50
+  legLeftRightFactor: 250
+  legForwardBackwardFactor: 500
 --- !u!114 &11410222
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -149,10 +149,10 @@ MonoBehaviour:
   isLeft: 1
   armUpForce: 100
   armLeftRightFactor: 100
-  armForwardBackwardFactor: 100
-  legUpForce: 100
-  legLeftRightFactor: 100
-  legForwardBackwardFactor: 100
+  armForwardBackwardFactor: 200
+  legUpForce: 50
+  legLeftRightFactor: 250
+  legForwardBackwardFactor: 200
 --- !u!114 &11420624
 MonoBehaviour:
   m_ObjectHideFlags: 1

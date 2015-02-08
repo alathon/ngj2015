@@ -41,7 +41,7 @@ public class GamepadController : MonoBehaviour
 	    Vector2 armMovement = GamePad.GetAxis(_arm, _index);
 	    if (armMovement.x != 0f || armMovement.y != 0f)
 	    {
-	        var force = new Vector3(armMovement.y*armLeftRightFactor, armMovement.x*armUpForce,
+	        var force = new Vector3(-armMovement.y*armLeftRightFactor, armMovement.x*armUpForce,
 	            armMovement.x*armForwardBackwardFactor);
 	        if (isLeft)
 	        {
@@ -55,7 +55,7 @@ public class GamepadController : MonoBehaviour
 	    Vector2 legMovement = GamePad.GetAxis(_leg, _index);
 	    if (legMovement.x != 0f || legMovement.y != 0f)
 	    {
-	        var force = new Vector3(legMovement.y*legLeftRightFactor, legMovement.x*legUpForce,
+	        var force = new Vector3(-legMovement.y*legLeftRightFactor, legMovement.x*legUpForce,
 	            legMovement.x*legForwardBackwardFactor);
 	        if (isLeft)
 	        {

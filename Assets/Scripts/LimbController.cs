@@ -19,10 +19,6 @@ public class LimbController : MonoBehaviour
     [SerializeField] private GameObject rightHand;
     [SerializeField] private GameObject leftFoot;
     [SerializeField] private GameObject rightFoot;
-    [SerializeField]
-    private GameObject spine;
-    [SerializeField]
-    private GameObject head;
 
     private ConstantForce torsoForce;
 
@@ -64,12 +60,8 @@ public class LimbController : MonoBehaviour
             {Limb.LeftHand, leftHand},
             {Limb.RightHand, rightHand},
             {Limb.LeftFoot, leftFoot},
-            {Limb.RightFoot, rightFoot},
-            {Limb.Spine, spine},
-            {Limb.Head, head}
+            {Limb.RightFoot, rightFoot}
         };
-
-        this.torsoForce = this.limbToGameObj[Limb.Spine].GetComponent<ConstantForce>();
 
         Verify();
     }
