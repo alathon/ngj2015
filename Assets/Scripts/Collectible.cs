@@ -22,8 +22,11 @@ public class Collectible : MonoBehaviour {
 		this.transform.SetParent (gObj.transform);
 
         // HARDCODED MUAHAHAHA
-        if(CompareTag("TVRemote"))
-            GameObject.FindObjectOfType<TVController>().OnWeird();
+	    if (CompareTag("TVRemote"))
+	    {
+	        GameObject.FindObjectOfType<TVController>().OnWeird();
+            FindObjectOfType<SofaArea>().babyScream.Stop();
+	    }
 	}
 
 	public void Unstick() {
