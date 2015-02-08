@@ -287,7 +287,7 @@ GameObject:
   - 222: {fileID: 25424773}
   - 114: {fileID: 25424772}
   m_Layer: 5
-  m_Name: GetToTheCoach
+  m_Name: Tutorial
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -318,7 +318,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: Get to the couch
+  m_Text: "Use the analog sticks. \nUp is arms, down is legs."
 --- !u!222 &25424773
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -332,15 +332,15 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 25424771}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 5.92000008}
+  m_LocalPosition: {x: 0, y: 0, z: .670000017}
   m_LocalScale: {x: .0117150163, y: .0117150163, z: .0117150163}
   m_Children: []
   m_Father: {fileID: 1894566065}
   m_RootOrder: 0
   m_AnchorMin: {x: .5, y: .5}
   m_AnchorMax: {x: .5, y: .5}
-  m_AnchoredPosition: {x: -437.190002, y: -242.169998}
-  m_SizeDelta: {x: 400, y: 30}
+  m_AnchoredPosition: {x: -438.329987, y: -239.149994}
+  m_SizeDelta: {x: 600, y: 30}
   m_Pivot: {x: .5, y: .5}
 --- !u!1 &33379620
 GameObject:
@@ -712,7 +712,7 @@ CharacterJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 0, y: 0, z: -1}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: .285756826, y: -5.88577677e-07, z: 8.94069672e-08}
+  m_ConnectedAnchor: {x: .285756826, y: -5.88577677e-07, z: 1.49011612e-07}
   m_SwingAxis: {x: -1, y: 0, z: 0}
   m_LowTwistLimit:
     limit: -90
@@ -2812,7 +2812,7 @@ Transform:
   m_PrefabInternal: {fileID: 293253172}
   m_GameObject: {fileID: 227362393}
   m_LocalRotation: {x: .126616389, y: 0, z: 0, w: .991951764}
-  m_LocalPosition: {x: 37.9000015, y: 5.13999987, z: -2.30999994}
+  m_LocalPosition: {x: 37.9000015, y: 5.13999987, z: -6.38000011}
   m_LocalScale: {x: 4, y: 4, z: 4}
   m_Children:
   - {fileID: 1928054947}
@@ -3310,7 +3310,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 474754, guid: 8b075cb31f1f7d04ca0160083b625bea, type: 2}
       propertyPath: m_LocalPosition.z
-      value: -2.30999994
+      value: -6.38000011
       objectReference: {fileID: 0}
     - target: {fileID: 474754, guid: 8b075cb31f1f7d04ca0160083b625bea, type: 2}
       propertyPath: m_LocalRotation.x
@@ -5097,7 +5097,7 @@ GameObject:
   - 222: {fileID: 434863511}
   - 114: {fileID: 434863510}
   m_Layer: 5
-  m_Name: GetToTheCoach
+  m_Name: GrabTheRemote
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5145,7 +5145,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: Switch the TV channel
+  m_Text: Grab the remote
 --- !u!222 &434863511
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -6336,7 +6336,7 @@ CharacterJoint:
   m_Anchor: {x: .0900000036, y: 0, z: 0}
   m_Axis: {x: 0, y: 1, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -.549380422, y: 3.76652395e-07, z: -.0100509077}
+  m_ConnectedAnchor: {x: -.549380422, y: 3.76652395e-07, z: -.0100508481}
   m_SwingAxis: {x: 0, y: 0, z: 1}
   m_LowTwistLimit:
     limit: -40
@@ -6566,6 +6566,72 @@ SkinnedMeshRenderer:
     m_Center: {x: -.000390857458, y: .540493786, z: .0279091001}
     m_Extent: {x: .326575845, y: .561722338, z: .197615772}
   m_DirtyAABB: 0
+--- !u!1 &558625695
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 224: {fileID: 558625696}
+  - 222: {fileID: 558625698}
+  - 114: {fileID: 558625697}
+  m_Layer: 5
+  m_Name: SwitchTheTVChannel
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &558625696
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 558625695}
+  m_LocalRotation: {x: 0, y: .70710665, z: 0, w: .707106948}
+  m_LocalPosition: {x: 0, y: 0, z: 22.9200001}
+  m_LocalScale: {x: .0117149996, y: .0117149996, z: .0117149996}
+  m_Children: []
+  m_Father: {fileID: 1894566065}
+  m_RootOrder: 2
+  m_AnchorMin: {x: .5, y: .5}
+  m_AnchorMax: {x: .5, y: .5}
+  m_AnchoredPosition: {x: -433.190002, y: -238.970001}
+  m_SizeDelta: {x: 400, y: 30}
+  m_Pivot: {x: .5, y: .5}
+--- !u!114 &558625697
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 558625695}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 30
+    m_FontStyle: 1
+    m_BestFit: 1
+    m_MinSize: 10
+    m_MaxSize: 80
+    m_Alignment: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 1
+    m_LineSpacing: 1
+  m_Text: Switch the TV channel
+--- !u!222 &558625698
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 558625695}
 --- !u!1 &563480155
 GameObject:
   m_ObjectHideFlags: 0
@@ -6933,6 +6999,72 @@ MeshFilter:
   m_PrefabInternal: {fileID: 811995251}
   m_GameObject: {fileID: 595372201}
   m_Mesh: {fileID: 4300000, guid: d038d12edb6854ce08a26a93951f2b7d, type: 3}
+--- !u!1 &598618990
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 224: {fileID: 598618991}
+  - 222: {fileID: 598618993}
+  - 114: {fileID: 598618992}
+  m_Layer: 5
+  m_Name: WhatAboutAGlassOfWater
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &598618991
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 598618990}
+  m_LocalRotation: {x: 0, y: -.70710665, z: 0, w: .707106948}
+  m_LocalPosition: {x: 0, y: 0, z: 5.92000008}
+  m_LocalScale: {x: .0117149996, y: .0117149996, z: .0117149996}
+  m_Children: []
+  m_Father: {fileID: 1894566065}
+  m_RootOrder: 4
+  m_AnchorMin: {x: .5, y: .5}
+  m_AnchorMax: {x: .5, y: .5}
+  m_AnchoredPosition: {x: -447.190002, y: -238.039993}
+  m_SizeDelta: {x: 500, y: 30}
+  m_Pivot: {x: .5, y: .5}
+--- !u!114 &598618992
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 598618990}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 30
+    m_FontStyle: 1
+    m_BestFit: 1
+    m_MinSize: 10
+    m_MaxSize: 80
+    m_Alignment: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 1
+    m_LineSpacing: 1
+  m_Text: What about a glass of water?
+--- !u!222 &598618993
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 598618990}
 --- !u!1 &602591684
 GameObject:
   m_ObjectHideFlags: 0
@@ -7266,7 +7398,7 @@ CharacterJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 0, y: -1, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: .461397082, y: -4.73113005e-07, z: -7.4505806e-09}
+  m_ConnectedAnchor: {x: .461397111, y: -4.73113005e-07, z: 5.30853868e-08}
   m_SwingAxis: {x: 0, y: 0, z: -1}
   m_LowTwistLimit:
     limit: -80
@@ -7715,7 +7847,7 @@ CharacterJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 0, y: 0, z: 1}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -.285758257, y: 2.60752131e-07, z: 9.31322575e-09}
+  m_ConnectedAnchor: {x: -.285758257, y: 2.60752131e-07, z: -5.0291419e-08}
   m_SwingAxis: {x: 1, y: 0, z: 0}
   m_LowTwistLimit:
     limit: -90
@@ -16791,7 +16923,7 @@ CharacterJoint:
   m_Anchor: {x: .100000001, y: 0, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -.229000211, y: -.0129995029, z: -.00600004569}
+  m_ConnectedAnchor: {x: -.229000226, y: -.0129995029, z: -.00599998608}
   m_SwingAxis: {x: 0, y: 1, z: 0}
   m_LowTwistLimit:
     limit: -20
@@ -17872,6 +18004,72 @@ Prefab:
   m_RootGameObject: {fileID: 803798185}
   m_IsPrefabParent: 0
   m_IsExploded: 1
+--- !u!1 &1568590300
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 224: {fileID: 1568590301}
+  - 222: {fileID: 1568590303}
+  - 114: {fileID: 1568590302}
+  m_Layer: 5
+  m_Name: TheDoorDontOpen
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1568590301
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1568590300}
+  m_LocalRotation: {x: 0, y: .70710665, z: 0, w: .707106948}
+  m_LocalPosition: {x: 0, y: 0, z: 5.17000008}
+  m_LocalScale: {x: .0117149996, y: .0117149996, z: .0117149996}
+  m_Children: []
+  m_Father: {fileID: 1894566065}
+  m_RootOrder: 3
+  m_AnchorMin: {x: .5, y: .5}
+  m_AnchorMax: {x: .5, y: .5}
+  m_AnchoredPosition: {x: -428.190002, y: -238.169983}
+  m_SizeDelta: {x: 500, y: 30}
+  m_Pivot: {x: .5, y: .5}
+--- !u!114 &1568590302
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1568590300}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 30
+    m_FontStyle: 1
+    m_BestFit: 1
+    m_MinSize: 10
+    m_MaxSize: 80
+    m_Alignment: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 1
+    m_LineSpacing: 1
+  m_Text: The Door Don't Open
+--- !u!222 &1568590303
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1568590300}
 --- !u!1 &1573534340
 GameObject:
   m_ObjectHideFlags: 0
@@ -21446,6 +21644,10 @@ RectTransform:
   m_Children:
   - {fileID: 25424774}
   - {fileID: 434863509}
+  - {fileID: 558625696}
+  - {fileID: 1568590301}
+  - {fileID: 598618991}
+  - {fileID: 2094079086}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_AnchorMin: {x: 0, y: 0}
@@ -22375,7 +22577,7 @@ CharacterJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 0, y: 1, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 3.05175781e-05, y: .952073812, z: -2.88709998e-08}
+  m_ConnectedAnchor: {x: 3.05175781e-05, y: .952073812, z: 2.79396772e-08}
   m_SwingAxis: {x: 0, y: 0, z: 1}
   m_LowTwistLimit:
     limit: -20
@@ -23575,7 +23777,7 @@ CharacterJoint:
   m_Anchor: {x: .100000001, y: 0, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: .232091963, y: -.0132137882, z: -.00619918481}
+  m_ConnectedAnchor: {x: .232091948, y: -.0132137891, z: -.0061991252}
   m_SwingAxis: {x: 0, y: 1, z: 0}
   m_LowTwistLimit:
     limit: -20
@@ -23700,7 +23902,7 @@ CharacterJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -.499333709, y: -.156086549, z: -.0311888456}
+  m_ConnectedAnchor: {x: -.499333709, y: -.156086549, z: -.0311888754}
   m_SwingAxis: {x: 0, y: 0, z: 1}
   m_LowTwistLimit:
     limit: -70
@@ -24344,6 +24546,72 @@ Prefab:
   m_RootGameObject: {fileID: 81384452}
   m_IsPrefabParent: 0
   m_IsExploded: 1
+--- !u!1 &2094079083
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 224: {fileID: 2094079086}
+  - 222: {fileID: 2094079085}
+  - 114: {fileID: 2094079084}
+  m_Layer: 5
+  m_Name: GrabTheRemote
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &2094079084
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2094079083}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 30
+    m_FontStyle: 1
+    m_BestFit: 1
+    m_MinSize: 10
+    m_MaxSize: 80
+    m_Alignment: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 1
+    m_LineSpacing: 1
+  m_Text: What is under the sofa?
+--- !u!222 &2094079085
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2094079083}
+--- !u!224 &2094079086
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2094079083}
+  m_LocalRotation: {x: 0, y: -.707105994, z: 0, w: .707107604}
+  m_LocalPosition: {x: 0, y: 0, z: 30.9200001}
+  m_LocalScale: {x: .0117149996, y: .0117149996, z: .0117149996}
+  m_Children: []
+  m_Father: {fileID: 1894566065}
+  m_RootOrder: 5
+  m_AnchorMin: {x: .5, y: .5}
+  m_AnchorMax: {x: .5, y: .5}
+  m_AnchoredPosition: {x: -451.190002, y: -239.169983}
+  m_SizeDelta: {x: 600, y: 30}
+  m_Pivot: {x: .5, y: .5}
 --- !u!1 &2096588912
 GameObject:
   m_ObjectHideFlags: 0
