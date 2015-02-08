@@ -82,4 +82,9 @@ public class LimbController : MonoBehaviour
         //this.torsoForce.force = new Vector3(this.torsoForce.force.x, this.torsoForce.force.y - force.y, this.torsoForce.force.z);
         this.limbToGameObj[limb].rigidbody.AddForce(force);
     }
+
+    public void AddRotationForce(Limb limb, Vector3 force)
+    {
+        limbToGameObj[limb].rigidbody.AddTorque(force);
+    }
 }

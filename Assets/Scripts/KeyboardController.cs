@@ -57,6 +57,9 @@ public class KeyboardController : MonoBehaviour {
                                             legMovement.y > 0 ? legUpForce : 0,
                                             legMovement.y * legForwardBackwardFactor));
 
+        Vector3 rotationForce = new Vector3((armMovement.x + legMovement.x) / 2, 0, 0);
+        _limbController.AddRotationForce(LimbController.Limb.Spine, rotationForce);
+
         // release button
         if(Input.GetKeyDown(KeyCode.Space))
             _limbController.Release(isLeft ? LimbController.Limb.LeftHand : LimbController.Limb.RightHand);

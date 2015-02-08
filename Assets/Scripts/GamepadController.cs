@@ -49,6 +49,9 @@ public class GamepadController : MonoBehaviour
 	        }
 
 	        _limbController.AddForce(isLeft ? LimbController.Limb.LeftHand : LimbController.Limb.RightHand, force);
+
+            Vector3 rotationForce = new Vector3(force.x/2, 0, 0);
+            _limbController.AddRotationForce(LimbController.Limb.Spine, rotationForce);
 	    }
         
 	    // leg 2 axes
@@ -63,6 +66,9 @@ public class GamepadController : MonoBehaviour
 
 	        }
 	        _limbController.AddForce(isLeft ? LimbController.Limb.LeftFoot : LimbController.Limb.RightFoot, force);
+
+            Vector3 rotationForce = new Vector3(force.x / 2, 0, 0);
+            _limbController.AddRotationForce(LimbController.Limb.Spine, rotationForce);
 	    }
 	    // release button
 	    foreach (GamePad.Button b in Enum.GetValues(typeof(GamePad.Button)))
