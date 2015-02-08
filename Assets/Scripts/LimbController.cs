@@ -10,13 +10,17 @@ public class LimbController : MonoBehaviour
         LeftHand,
         RightHand,
         LeftFoot,
-        RightFoot
+        RightFoot,
+        Spine,
+        Head
     }
 
     [SerializeField] private GameObject leftHand;
     [SerializeField] private GameObject rightHand;
     [SerializeField] private GameObject leftFoot;
     [SerializeField] private GameObject rightFoot;
+
+    private ConstantForce torsoForce;
 
     private Dictionary<Limb, GameObject> limbToGameObj;
 
@@ -50,6 +54,7 @@ public class LimbController : MonoBehaviour
 
     void Awake()
     {
+        
         this.limbToGameObj = new Dictionary<Limb, GameObject>()
         {
             {Limb.LeftHand, leftHand},
@@ -73,6 +78,8 @@ public class LimbController : MonoBehaviour
 
     public void AddForce(Limb limb, Vector3 force)
     {
+        //this.limbToGameObj[Limb.Spine].rigidbody.AddForce(new Vector3(0, -force.y, 0));
+        //this.torsoForce.force = new Vector3(this.torsoForce.force.x, this.torsoForce.force.y - force.y, this.torsoForce.force.z);
         this.limbToGameObj[limb].rigidbody.AddForce(force);
     }
 }
