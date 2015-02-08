@@ -129,12 +129,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isLeft: 0
-  armUpForce: 50
-  armLeftRightFactor: 20
-  armForwardBackwardFactor: 20
-  legUpForce: 50
-  legLeftRightFactor: 20
-  legForwardBackwardFactor: 20
+  armUpForce: 100
+  armLeftRightFactor: 100
+  armForwardBackwardFactor: 100
+  legUpForce: 100
+  legLeftRightFactor: 100
+  legForwardBackwardFactor: 100
 --- !u!114 &11410222
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -147,12 +147,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isLeft: 1
-  armUpForce: 50
-  armLeftRightFactor: 20
-  armForwardBackwardFactor: 20
-  legUpForce: 50
-  legLeftRightFactor: 20
-  legForwardBackwardFactor: 20
+  armUpForce: 100
+  armLeftRightFactor: 100
+  armForwardBackwardFactor: 100
+  legUpForce: 100
+  legLeftRightFactor: 100
+  legForwardBackwardFactor: 100
 --- !u!114 &11420624
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -164,8 +164,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7fc87a1099b5d414f9a3edda2875c97f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LeftController: {fileID: 0}
-  RightController: {fileID: 0}
+  LeftController: {fileID: 11410222}
+  RightController: {fileID: 11410220}
 --- !u!114 &11431620
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -208,7 +208,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 165164}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f11ba9512a2a1c54a9ec2a01a9bb8a00, type: 3}
   m_Name: 
